@@ -1,0 +1,22 @@
+The supporting files invoke the appropriate scheduling algorithm. 
+
+To build the appropriate scheduler, enter
+
+make fcfs
+make sjf
+make rr
+make priority
+make priority_rr
+
+which builds the executable files for each of the scheduling algorithms.
+
+The command used to execute the file is ./[program name] [schedule].txt
+Each program takes the tasks that have been input through the text file and runs them through the scheduled algorithm.
+
+Each algorithm does what it's name implies.
+
+FCFS takes the first task, runs it, moves to the next until all tasks have been completed.
+SJF takes the list, sorts them into the shortest to longest jobs, then executes them.
+RR acts the same as FCFS, but executes the tasks in 10 unit intervals.
+Priority takes into account the priority of each task, executing the highest priority first, then moving down the list.
+Priority RR is the same as priority, but it takes the RR algorithm and executes them in 10 unit intervals until the tasks are complete.
